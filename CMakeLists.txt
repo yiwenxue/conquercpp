@@ -50,3 +50,27 @@ add_demo(
     FILES
     others/version.cpp
 )
+
+add_demo(
+    ID variant
+    FILES
+    others/variant.cpp
+)
+
+add_demo(
+    ID optional
+    FILES
+    others/optional.cpp
+)
+
+add_demo(
+    ID format
+    FILES
+    others/format.cpp
+)
+
+add_demo(
+    ID concept
+    FILES
+    concept/concept.cpp
+)
