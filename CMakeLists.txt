@@ -21,56 +21,90 @@ function(add_demo)
     target_link_libraries(${TARGET_ID} ${TARGET_LIBS})
 endfunction()
 
-add_demo(
-    ID split
-    FILES
-    ranges/split.cpp
-)
+# add_demo(
+#     ID split
+#     FILES
+#     ranges/split.cpp
+# )
+
+# add_demo(
+#     ID filter
+#     FILES
+#     ranges/filter.cpp
+# )
+
+# add_demo(
+#     ID view
+#     FILES
+#     ranges/view.cpp
+# )
+
+# add_demo(
+#     ID consumer
+#     FILES
+#     coroutine/consumer.cpp
+# )
+
+# add_demo(
+#     ID test
+#     FILES
+#     coroutine/test.cpp
+# )
+
+# add_demo(
+#     ID generator
+#     FILES
+#     coroutine/generator.cpp
+# )
+
+# add_demo(
+#     ID version
+#     FILES
+#     others/version.cpp
+# )
+
+# add_demo(
+#     ID variant
+#     FILES
+#     others/variant.cpp
+# )
+
+# add_demo(
+#     ID optional
+#     FILES
+#     others/optional.cpp
+# )
+
+# add_demo(
+#     ID format
+#     FILES
+#     others/format.cpp
+# )
+
+# add_demo(
+#     ID concept
+#     FILES
+#     concept/concept.cpp
+# )
+
+# add_demo(
+#     ID bvh
+#     FILES
+#     tools/bvh.cpp
+# )
+
+# add_demo(
+#     ID vector
+#     FILES
+#     tools/vector.cpp
+# )
+
+add_subdirectory(unifex)
+
+add_subdirectory(graph)
 
 add_demo(
-    ID filter
+    ID power_set
     FILES
-    ranges/filter.cpp
-)
-
-add_demo(
-    ID view
-    FILES
-    ranges/view.cpp
-)
-
-add_demo(
-    ID generator
-    FILES
-    coroutine/generator.cpp
-)
-
-add_demo(
-    ID version
-    FILES
-    others/version.cpp
-)
-
-add_demo(
-    ID variant
-    FILES
-    others/variant.cpp
-)
-
-add_demo(
-    ID optional
-    FILES
-    others/optional.cpp
-)
-
-add_demo(
-    ID format
-    FILES
-    others/format.cpp
-)
-
-add_demo(
-    ID concept
-    FILES
-    concept/concept.cpp
+    tools/power_set.cpp
 )
