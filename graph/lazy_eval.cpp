@@ -23,4 +23,6 @@ template <typename T> struct Lazy {
   using optional_type = std::optional<T>;
 };
 
+int main() {}
+
 // Monad with lazy evaluation

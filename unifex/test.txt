@@ -1,0 +1,23 @@
+void simple_file_async()
+{
+    auto load_file_async = [](const std::string &name) -> task<std::string>
+    {
+        std::ifstream file(name);
+        std::string str;
+
+        file.seekg(0, std::ios::end);
+        str.reserve(file.tellg());
+        file.seekg(0, std::ios::beg);
+
+        str.assign((std::istreambuf_iterator<char>(file)),
+                   std::istreambuf_iterator<char>());
+
+        co_return str;
+    };
+
+    std::string file_name = "test.txt";
+
+    std::optional<std::string> file_contents = load_file_async(file_name) | sync_wait();
+
+    std::cout << "file contents: " << *file_contents << std::endl;
+}

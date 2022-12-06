@@ -39,23 +39,29 @@ endfunction()
 #     ranges/view.cpp
 # )
 
-# add_demo(
-#     ID consumer
-#     FILES
-#     coroutine/consumer.cpp
-# )
+add_demo(
+    ID consumer
+    FILES
+    coroutine/consumer.cpp
+)
 
-# add_demo(
-#     ID test
-#     FILES
-#     coroutine/test.cpp
-# )
+add_demo(
+    ID lazy_iterator
+    FILES
+    coroutine/lazy_iterator.cpp
+)
 
-# add_demo(
-#     ID generator
-#     FILES
-#     coroutine/generator.cpp
-# )
+add_demo(
+    ID test
+    FILES
+    coroutine/test.cpp
+)
+
+add_demo(
+    ID generator
+    FILES
+    coroutine/generator.cpp
+)
 
 # add_demo(
 #     ID version
